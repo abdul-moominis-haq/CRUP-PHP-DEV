@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+   <script src="/Script.js"></script>
+   <title>Edit Record</title>
+</head>
+<body>
+
+
+
+
+<header class="header" data-header>
+    
+
+     
+      <nav class="navbar" data-navbar>
+
+        
+
+        <ul class="navbar-list">
+
+         <li>
+            <a href="./index.html" class="navbar-link">Home</a>
+            
+          </li>
+           <li>
+            <a href="./page.html" class="navbar-link">Administration</a>
+          </li>
+
+          <li>
+            <a href="./new.html" class="navbar-link">Add Deceased</a>
+          </li>
+
+          <li>
+            <a href="/edit.html" class="navbar-link">Edit Decease Information</a>
+          </li>
+          </li>
+
+        </ul>
+
+       
+
+      </nav>
+
+    </div>
+  </header>
+
+
+   <form action="edit.php?id=<?php echo $id; ?>" method="post">
+    <label>Name</label>
+    <input type="text" value="<?php {$row['Name'];}3 ?>" name="name">
+    <br>
+    <label>Age</label>
+    <input type="text" value="<?php echo $row['Age']; ?>" name="age">
+    <br>
+    <label>Cause of Death</label>
+    <input type="text" value="<?php echo $row['cause_of_death']; ?>" name="cause_of_death">
+    <br>
+    <input type="submit" value="Save">
+   </form>
+
+
+   <footer class="footer">
+
+    
+
+  </footer>
+</body>
+</html> 
